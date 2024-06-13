@@ -42,6 +42,15 @@ def rock_paper_scissors():
     else:
         pretty_printer("Computer won the game!")
 
+    pretty_printer(f"Final scores: Player: {player_score} Computer: {computer_score}")
+
+    # get user input and ask whether they want to play again
+    new_game = input("Do you want to play again? [Y/N]: ")
+    if new_game.lower() == "y":
+        rock_paper_scissors()
+    else:
+        pretty_printer("Thank you for playing!")
+
 def pretty_printer(string):
     """
     Function to print a string in a pretty way.
