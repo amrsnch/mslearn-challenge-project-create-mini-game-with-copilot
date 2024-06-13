@@ -38,9 +38,9 @@ def rock_paper_scissors():
             computer_score += 1
     
     if player_score == 3:
-        print("You won the game!")
+        pretty_printer("You won the game!")
     else:
-        print("Computer won the game!")
+        pretty_printer("Computer won the game!")
 
 def pretty_printer(string):
     """
